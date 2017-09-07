@@ -1,0 +1,27 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
+f = int(input())
+if (d < a) and (d < b) and (d < c):
+    if (e > b) and (e > a) and (e > c):
+        print('Boxes are incomparable')
+    elif(f > a) and (f > b) and (f > c):
+        print('Boxes are incomparable')
+elif (e < a) and (e < b) and (e < c):
+    if (d > b) and (d > a) and (d > c):
+        print('Boxes are incomparable')
+    elif(f > a) and (f > b) and (f > c):
+        print('Boxes are incomparable')
+elif (f < a) and (f < b) and (f < c):
+    if (e > b) and (e > a) and (e > c):
+        print('Boxes are incomparable')
+    elif(d > a) and (d > b) and (d > c):
+        print('Boxes are incomparable')
+elif (a * b * c) > (d * e * f):
+    print('The first box is larger than the second one')
+elif (a * b * c) < (d * e * f):
+    print('The first box is smaller than the second one')
+else:
+    print('Boxes are equal')
